@@ -1,0 +1,259 @@
+/* Algemenen CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "owners", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+body {
+    background: #e2dfe0; 
+}
+
+h1 {
+    color: #73A3CC;
+    font-size: 50px;
+}
+
+h2 {
+    color: #F7836C;
+    font-size: 40px;
+}
+
+a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #F7836C;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+p {
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.titel {
+    animation: titel 2s ease 0s 1 normal forwards;
+}
+
+@keyframes titel {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Hal */
+.hal1 {
+        border: 15px solid #c37363;
+        width: 1133px;
+        height: 527px;
+        margin: auto;
+        background-image: url(../img/hal1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+ }
+
+.muziek {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 55px;
+}
+
+ /* Schilderijen */
+ .schilderij1 {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 293px; 
+}
+
+.schilderij2 {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 1014px;
+    margin-top: 138px;
+}
+
+.schilderij3 {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 258px;
+    margin-top: 164px;
+}
+
+.schilderij4 {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 777px;
+    margin-top: 265px;
+}
+
+.schilderij5 {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 904px;
+    margin-top: 140px;
+}
+
+.schilderij6 {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 784px;
+    margin-top: 137px;
+}
+
+.schilderij7 {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 89px;
+    margin-top: 163px;
+}
+
+.schilderij8 {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 77px;
+    margin-top: 267px;
+}
+
+/* Popup Scherm 1*/
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 5px solid #c37363;
+    z-index: 10;
+    background: #fff;
+    width: 1000px;
+    height: 450px;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-header .title h2 {
+    color: #c37363;
+    font-size: 25px;
+}
+
+.popup-header .title h3 {
+    color: #c37363;
+    font-size: 20px;
+}
+
+.popup-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #c37363;
+    margin-top: -20px;
+}
+
+.popup-body {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.popup-body p {
+    margin-left: 20px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Popup schilderijen */
+.korenvelden {
+    width: 500px;
+    height: auto;
+}
+
+.blauwe {
+    height: 300px;
+    width: auto;
+}
+
+.perenboom {
+    height: 300px;
+    width: auto;
+}
+
+.man {
+    height: 300px;
+    width: auto;
+}
+
+.vrouw {
+    height: 300px;
+    width: auto;
+}
+
+.vaas {
+    height: 300px;
+    width: auto;
+}
+
+.uitzicht {
+    width: 500px;
+    height: auto;
+}
+
+.wijngaard {
+    width: 400px;
+    height: auto;
+}
